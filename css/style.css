@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    width: 904px;
+    margin: 0px auto;
+}
+ul.navigation{
+    width: 904px;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+.navigation li {
+    box-sizing: border-box;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 65px;
+    margin-left: 0px;
+    margin-right: 102px;
+    text-shadow: 1px color="#c0c0c0";
+    }
+.navigation li:last-child{
+    margin-right: 0px;
+}
+a {
+    text-decoration: none;
+    color: #626262;
+}
+a:hover {
+    color: #03a9f4;
+    text-shadow: 1px color="#abd9fa";
+}
+article {  
+    box-sizing: border-box;
+    block-size: auto;
+    height: 480px;
+    display: inline-block;
+    margin-top: 98px;
+    margin-right: 60px;
+    width: calc(50% - 32px);
+    text-align: left;
+}
+article.even-item{
+    margin-right: 0px;
+}
+h2 {
+    margin-top: 22px;
+    font-size: 30px;
+    color: #626262;
+}
+p.title{
+    margin-top: 27px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+p{
+    margin-top: 29px;
+    font-size: 14px;
+    width: 420px;
+    color: #626262;
+}
+button{
+        font-size: 20px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+        border-width: 1px;
+        border-color: rgb(98, 98, 98);
+        border-style: solid;
+        width: 165px;
+        height: 60px;
+        margin-top: 52px;
+        margin-left: 356px;
+      }
+img{
+    max-width: 100%;
+    height: auto;
+}
