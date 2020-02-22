@@ -76,12 +76,11 @@ button{
         border-color: rgb(98, 98, 98);
         border-style: solid;
         width: 165px;
-        height: 60px;
+        height: 60px;       
       }
-      footer.some-info{
-        width: 904px;
-        margin: 52px 204px;
-        padding: 0px 369.5px;
+      section.button-item{
+        margin: 52px auto;
+        text-align: center;
       }
 img{
     max-width: 100%;
