@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
 }
-body {
+header.nav-menu{
     width: 904px;
     margin: 0px auto;
 }
@@ -11,11 +11,13 @@ ul.navigation{
     padding: 0px;
     text-align: center;
 }
+nav{
+    margin-top: 65px;
+}
 .navigation li {
     box-sizing: border-box;
     display: inline-block;
     text-transform: uppercase;
-    margin-top: 65px;
     margin-left: 0px;
     margin-right: 102px;
     text-shadow: 1px color="#c0c0c0";
@@ -31,6 +33,10 @@ a:hover {
     color: #03a9f4;
     text-shadow: 1px color="#abd9fa";
 }
+section.articles{
+    width: 904px;
+    margin: 0px auto;
+}
 article {  
     box-sizing: border-box;
     block-size: auto;
@@ -44,12 +50,12 @@ article.even-item{
     margin-right: 0px;
 }
 h2 {
-    margin-top: 22px;
+    margin-top: 25.5px;
     font-size: 30px;
     color: #626262;
 }
 p.title{
-    margin-top: 27px;
+    margin-top: 30px;
     font-size: 14px;
     text-transform: uppercase;
     color: #b4ad9e;
@@ -59,6 +65,7 @@ p{
     font-size: 14px;
     width: 420px;
     color: #626262;
+    line-height: 1.5;
 }
 button{
         font-size: 20px;
@@ -70,8 +77,11 @@ button{
         border-style: solid;
         width: 165px;
         height: 60px;
-        margin-top: 52px;
-        margin-left: 356px;
+      }
+      footer.some-info{
+        width: 904px;
+        margin: 52px 204px;
+        padding: 0px 369.5px;
       }
 img{
     max-width: 100%;
