@@ -67,22 +67,25 @@ p{
     color: #626262;
     line-height: 1.5;
 }
-button{
-        font-size: 20px;
-        font-family: "PlayfairDisplay";
-        color: rgb(98, 98, 98);
-        line-height: 1.2;
-        border-width: 1px;
-        border-color: rgb(98, 98, 98);
-        border-style: solid;
-        width: 165px;
-        height: 60px;       
-      }
-      section.button-item{
-        margin: 52px auto;
-        text-align: center;
-      }
+
 img{
     max-width: 100%;
     height: auto;
+}
+section.button-item{
+    display: block;
+    width: 904px;
+    margin: 0 auto;
+    padding: 52px 0px;
+    text-align: center;
+}
+button{
+    width: 162px;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    border: #626262 solid 1px;
+    font-family: "PlayfairDisplay";
+    font-size: 20px;
+    line-height: 1.2;
 }
