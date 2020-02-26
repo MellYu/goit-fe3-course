@@ -6,7 +6,7 @@ header.nav-menu{
     margin: 0px auto;
 }
 ul.navigation{
-    width: 904px;
+    width: 100%;
     margin: 0px auto;
     padding: 0px;
     text-align: center;
@@ -50,13 +50,16 @@ article.even-item{
     margin-right: 0px;
 }
 h2 {
-    margin-top: 25.5px;
+    margin: 0;
     font-size: 30px;
+    line-height: 1.2;
     color: #626262;
 }
 p.title{
     margin-top: 30px;
+    margin-bottom: 25px;
     font-size: 14px;
+    line-height: 1.2;
     text-transform: uppercase;
     color: #b4ad9e;
 }
@@ -72,7 +75,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-section.button-item{
+div.button-item{
     display: block;
     width: 162px;
     height: 62px;
