@@ -1,0 +1,317 @@
+html{
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+@font-face{
+    font-family: "Pe 7 icon";
+    src: url(../fonts/Pe-icon-7-stroke.ttf);
+}
+header.navigation-logo{
+    display: block;
+    margin: 0px 245px;
+    padding: 0px;
+    height: 91px;
+}
+nav.menu{
+    margin: 0px;
+    padding: 0px;
+    height: 91px;
+    width: 1110px;
+}    
+h1.logo{
+    font-size: 30px;
+    font-family: "Roboto", light;
+    font: lighter;
+    color: #555252;
+    text-transform: uppercase;
+    margin: 38px 0px 0px 0px;
+    padding: 0;
+width: 190px;
+height: 42px;
+float: left;
+}
+.logo::first-letter{
+    color: #1abc9c;
+}
+ul.main-menu{    
+      display: block;
+      width: 472px;
+      height: 23px; 
+      margin: 43px 0px 0px 0px;
+      padding: 5px 0px;
+      float: right;
+      text-align: right;
+  }
+ul.main-menu::after{
+    display: block;
+    content: ' ';
+    clear: both;
+}
+li.menu-item{
+      padding: 0;
+      display: block;
+      width: auto;
+      float: left;
+      margin-right: 30px;
+      text-align: left;
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 11px;
+      }
+li:last-child{
+    margin-right: 0px;
+}
+a.nav-link{
+    vertical-align: middle;
+    font-family: "Open Sans", bold;
+    font-size: 14px;
+    color: #0f0101;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #1abc9c;
+}
+section.offers{
+    display: block;
+    width: 1600px;
+    height: 600px;
+    position: relative;
+    margin: 0px;
+    margin-bottom: 101px;
+}
+
+h2.offer-title{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 893px;
+    height: 164px;
+    font-family: "Roboto";
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: 203px;
+    left: 430px;
+}
+p.offer-menu{
+    display: block;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+p.icon{
+    display: block;
+    width: 104px;
+    height: 104px;
+    background-color: #4f9c8a;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    vertical-align: 11px;
+    opacity: 0.651;
+}
+p.less{
+    position: absolute;
+    top: 225px;
+    left: 245px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Pe 7 icon";
+    font-size: 100px;
+}
+p.more{
+    position: absolute;
+    top: 230px;
+    right: 245px;
+    margin: 0;
+    color: #ffffff;
+    font-family: "Pe 7 icon";
+    font-size: 100px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h3.collection-title {
+    font-family: "roboto";
+    font-size: 48px;
+    font: bold;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+    width: 1598px;
+    height: 83px;
+}
+h3::after {
+    content: '';
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 32px auto;
+    margin-bottom: 0px;
+}
+ul.coll-items{
+    display: block;
+    width: 1600px;
+    height: 322px;
+    margin: 0px 245px 100px;
+    padding: 0px;
+}
+li.collection-item{
+    position: relative;
+    display: block;
+    width: 255px;
+    height: 322px;
+    float: left;
+    margin-right: 30px;
+    
+}
+li.collection-item:last-child{
+    margin-right: 0px;
+}
+section.hide-icons{
+    display: block;
+    width: 235px;
+    height: 261px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #737373;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+}
+ul.hide-menu{
+    max-width: 166px;
+    padding: 0;
+    position: absolute;
+    top: 79px;
+    left: 35px;
+    content: '';
+    display: block;
+    clear: both;    
+}
+li.hide-icon-item{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: #ffffff solid 1px;
+    margin: 0px;
+    float: left;
+    margin-right: 9px;
+    text-align: center;
+    line-height: 48px;
+}
+a{
+    font-family: "Pe 7 icon";
+    font-size: 30px;
+    vertical-align: middle;
+    color: #ffffff; 
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+}
+li.hide-icon-item:hover{
+    background-color: #1abc9c;
+}
+button.basket:hover{
+    background-color: #1abc9c;
+}
+li.hide-icon-item:nth-child(2n){
+    margin-right: 7px;
+}
+li.hide-icon-item:last-child{
+    margin: 0px;
+}
+button.basket{
+    display: block;
+    width: 166px;
+    height: 50px;
+    border: #ffffff solid 1px;
+    padding: 0;
+    position: absolute;
+    bottom: 75px;
+    left: 35px;
+    box-shadow: none;
+    background-color: #323232;
+    font-family: "Pe 7 icon";
+}
+bdi.bask{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    vertical-align: 9px;
+}
+li.collection-item:hover .hide-icons{
+    opacity: 0.549;
+      }
+p.image{
+    height: 282px;
+    widows: 255px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+p.product-item{
+        display: block;
+        float: left;
+        margin: 0;
+        width: 255px;
+        height: 40px;
+        font-family: "Roboto";
+        font-size: 18px;
+        line-height: 15px;
+        color: #ffffff;
+        text-transform: uppercase;
+    background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
+}
+span.product-cost{
+    display: block;
+    float: right;
+    margin: 12px 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+span.product-name{
+    display: block;
+    width: 158px;
+    float: left;
+    margin: 12px 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+li.collection-item:hover> .product-item{
+    background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
+}
+footer.more-info{
+    width: 1600px;
+    height: 66px;
+    margin: 0;
+    line-height: 66px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #323232;
+}
+bdi{
+    color: #45b8a3;
+}
+
+
+  
