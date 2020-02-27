@@ -1,7 +1,10 @@
 html {
     box-sizing: border-box;
 }
-header.nav-menu{
+body{
+    margin: 0;
+}
+.sizes{
     width: 904px;
     margin: 0px auto;
 }
@@ -32,10 +35,6 @@ a {
 a:hover {
     color: #03a9f4;
     text-shadow: 1px color="#abd9fa";
-}
-section.articles{
-    width: 904px;
-    margin: 0px auto;
 }
 article {  
     box-sizing: border-box;
@@ -75,19 +74,11 @@ img{
     max-width: 100%;
     height: auto;
 }
-div.button-item{
-    display: block;
-    width: 162px;
-    height: 62px;
-    margin: 0 auto;
-    padding: 52px 371px;
-    text-align: center;
-}
 button{
-    width: 162px;
+    max-width: 162px;
     height: 62px;
-    margin: 0;
-    padding: 0;
+    margin: 52px 371px;
+    padding: 18px 39px 18px 33px;
     border: #626262 solid 1px;
     font-family: "PlayfairDisplay";
     font-size: 20px;
