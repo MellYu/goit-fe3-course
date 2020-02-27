@@ -6,6 +6,9 @@ html{
     clear: both;
     display: block;
 }
+body{
+    margin: 0;
+}
 @font-face{
     font-family: "Pe 7 icon";
     src: url(../fonts/Pe-icon-7-stroke.ttf);
