@@ -41,7 +41,7 @@ a{
 a:hover{
     color: #1abc9c;
 }
-  h2{
+  h2.main-product-list{
       font-family: "roboto";
       font-size: 48px;
       font: bold;
@@ -52,11 +52,11 @@ a:hover{
       margin-bottom: 115px;
       position: relative;
   }
-  h2::after{
+  h2.main-product-list::after{
       position: absolute;
     top: 82px;
     left: 473px;
-      content:'';
+    content:'';
     display: block;
     width: 164px;
     height: 7px;
@@ -64,8 +64,7 @@ a:hover{
   }
   ul.featured-products{
       display: block;
-      margin-top: 73px;
-      margin-bottom: 0px;
+      margin: 0;
       padding: 0px;
   }
   li.item-list{
@@ -150,10 +149,21 @@ li.item-list:hover .signature{
       text-transform: uppercase;
       text-align: center;
       margin: 0 auto;
+      margin-bottom: 104px;
+      position: relative;
     }
-
+    h2.newws::after{
+        position: absolute;
+      top: 82px;
+      left: 473px;
+        content:'';
+      display: block;
+      width: 164px;
+      height: 7px;
+      background-color: #1abc9c;
+    }
     ul.news-menu{
-        margin-top: 81px;
+        margin: 0 auto;
         padding: 0px;
     }
     li.news-item{
