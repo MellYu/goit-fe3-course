@@ -1,6 +1,10 @@
 html{
     box-sizing: border-box;
 }
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -15,26 +19,17 @@ body{
 }
 header.navigation-logo{
     display: block;
-    margin: 0px 245px;
+    margin: 0px auto;
     padding: 0px;
     height: 91px;
 }
 nav.menu{
-    margin: 0px;
-    padding: 0px;
-    height: 91px;
+    margin: 0px auto;
+    padding: 38px 0px 32px;
+    /* height: 91px; */
     width: 1110px;
 }    
-h1.logo{
-    font-size: 30px;
-    font-family: "Roboto", light;
-    font: lighter;
-    color: #555252;
-    text-transform: uppercase;
-    margin: 38px 0px 0px 0px;
-    padding: 0;
-width: 190px;
-height: 42px;
+img.logo{
 float: left;
 }
 .logo::first-letter{
@@ -44,8 +39,8 @@ ul.main-menu{
       display: block;
       width: 472px;
       height: 23px; 
-      margin: 43px 0px 0px 0px;
-      padding: 5px 0px;
+      margin: 0;
+      padding: 0;
       float: right;
       text-align: right;
   }
@@ -147,6 +142,7 @@ img{
     height: auto;
 }
 h3.collection-title {
+    position: relative;
     font-family: "roboto";
     font-size: 48px;
     font: bold;
@@ -160,13 +156,14 @@ h3.collection-title {
     height: 83px;
 }
 h3::after {
+    position: absolute;
+    top: 82px;
+    left: 718px;
     content: '';
     display: block;
     width: 164px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 32px auto;
-    margin-bottom: 0px;
 }
 ul.coll-items{
     display: block;
@@ -265,16 +262,19 @@ li.collection-item:hover .hide-icons{
     opacity: 0.549;
       }
 p.image{
-    height: 282px;
-    widows: 255px;
+    height: auto;
+    width: 255px;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
 p.product-item{
+    position: absolute;
         display: block;
         float: left;
         margin: 0;
+        right: 0;
+        bottom: 0;
         width: 255px;
         height: 40px;
         font-family: "Roboto";
@@ -285,17 +285,19 @@ p.product-item{
     background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
 }
 span.product-cost{
+    font-size: 18px;
     display: block;
     float: right;
-    margin: 12px 14px;
+    padding: 13px;
     color: #ffffff;
     text-transform: uppercase;
 }
 span.product-name{
+    font-size: 18px;
     display: block;
     width: 158px;
     float: left;
-    margin: 12px 14px;
+    padding: 13px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -303,9 +305,7 @@ li.collection-item:hover> .product-item{
     background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
 }
 footer.more-info{
-    width: 1600px;
     height: 66px;
-    margin: 0;
     line-height: 66px;
     text-align: center;
     font-size: 16px;
