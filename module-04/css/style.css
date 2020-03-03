@@ -180,6 +180,8 @@ li.item-list:hover .signature{
         margin-bottom: 0px;
         color: #555252;
         line-height: 26px;
+        position: relative;
+        height: 61px;
     }
     p.article-news{
         font-family:"OpenSans";
@@ -195,7 +197,9 @@ li.item-list:hover .signature{
         width: 136px;
         height: 3px;
         background-color: #1abc9c;
-        margin: 13px 0px 0px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
     }
     li.news-item:last-child{
         margin-right: 0px;
