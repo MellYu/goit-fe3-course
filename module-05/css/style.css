@@ -10,31 +10,28 @@ html{
     clear: both;
     display: block;
 }
-body{
-    margin: 0;
-}
 @font-face{
     font-family: "Pe 7 icon";
     src: url(../fonts/Pe-icon-7-stroke.ttf);
 }
-header.navigation-logo{
+.navigation-logo{
     display: block;
     margin: 0px auto;
     padding: 0px;
     height: 91px;
 }
-nav.menu{
+.menu{
     margin: 0px auto;
     padding: 38px 0px 32px;
     width: 1110px;
 }    
-img.logo{
+.logo{
 float: left;
 }
 .logo::first-letter{
     color: #1abc9c;
 }
-ul.main-menu{    
+.main-menu{    
       display: block;
       width: 472px;
       height: 23px; 
@@ -43,12 +40,12 @@ ul.main-menu{
       float: right;
       text-align: right;
   }
-ul.main-menu::after{
+.main-menu::after{
     display: block;
     content: ' ';
     clear: both;
 }
-li.menu-item{
+.menu-item{
       padding: 0;
       display: block;
       width: auto;
@@ -58,12 +55,12 @@ li.menu-item{
       font-family: "Open Sans";
       font-weight: bold;
       font-size: 14px;
-      line-height: 11px;
+      line-height: 1.2;
       }
-li:last-child{
+.menu-item:last-child{
     margin-right: 0px;
 }
-a.nav-link{
+.nav-link{
     vertical-align: middle;
     font-family: "Open Sans", bold;
     font-size: 14px;
@@ -71,10 +68,10 @@ a.nav-link{
     text-decoration: none;
     text-transform: uppercase;
 }
-a:hover{
+.nav-link:hover{
     color: #1abc9c;
 }
-section.offers{
+.offers{
     display: block;
     width: 1600px;
     height: 600px;
@@ -82,8 +79,19 @@ section.offers{
     margin: 0px;
     margin-bottom: 101px;
 }
-
-h2.offer-title{
+.offers-image{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+.image-bc{
+    opacity: 0.522;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.offer-title{
     display: block;
     margin: 0;
     padding: 0;
@@ -91,22 +99,23 @@ h2.offer-title{
     height: 164px;
     font-family: "Roboto";
     font-size: 60px;
+    line-height: 1.6;
     font-weight: bold;
     color: #ffffff;
     position: absolute;
-    top: 203px;
+    top: 193px;
     left: 430px;
 }
-p.offer-menu{
+.offer-menu{
     display: block;
     font-family: "Roboto";
     font-size: 24px;
     font-weight: lighter;
-    line-height: 50px;
+    line-height: 1.2;
     margin: 0;
     padding: 0;
 }
-p.icon{
+.icon{
     display: block;
     width: 104px;
     height: 104px;
@@ -117,7 +126,7 @@ p.icon{
     vertical-align: 11px;
     opacity: 0.651;
 }
-p.less{
+.less{
     position: absolute;
     top: 225px;
     left: 245px;
@@ -127,7 +136,7 @@ p.less{
     font-family: "Pe 7 icon";
     font-size: 100px;
 }
-p.more{
+.more{
     position: absolute;
     top: 230px;
     right: 245px;
@@ -140,7 +149,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-h3.collection-title {
+.collection-title {
     position: relative;
     font-family: "roboto";
     font-size: 48px;
@@ -154,7 +163,7 @@ h3.collection-title {
     width: 1598px;
     height: 83px;
 }
-h3::after {
+.collection-title::after {
     position: absolute;
     top: 82px;
     left: 718px;
@@ -164,14 +173,14 @@ h3::after {
     height: 7px;
     background-color: #1abc9c;
 }
-ul.coll-items{
+.coll-items{
+    width: 1110px;
     display: block;
-    width: 1600px;
     height: 322px;
-    margin: 0px 245px 100px;
-    padding: 0px;
+   padding: 0;
+   padding-bottom: 100px;
 }
-li.collection-item{
+.collection-item{
     position: relative;
     display: block;
     width: 255px;
@@ -180,10 +189,10 @@ li.collection-item{
     margin-right: 30px;
     
 }
-li.collection-item:last-child{
+.collection-item:last-child{
     margin-right: 0px;
 }
-section.hide-icons{
+.hide-icons{
     display: block;
     width: 235px;
     height: 261px;
@@ -194,7 +203,7 @@ section.hide-icons{
     opacity: 0;
     background-color: rgb(0, 0, 0);
 }
-ul.hide-menu{
+.hide-menu{
     max-width: 166px;
     padding: 0;
     position: absolute;
@@ -204,7 +213,7 @@ ul.hide-menu{
     display: block;
     clear: both;    
 }
-li.hide-icon-item{
+.hide-icon-item{
     display: inline-block;
     width: 48px;
     height: 48px;
@@ -215,7 +224,7 @@ li.hide-icon-item{
     text-align: center;
     line-height: 48px;
 }
-a{
+.hide-icons-font{
     font-family: "Pe 7 icon";
     font-size: 30px;
     vertical-align: middle;
@@ -224,19 +233,19 @@ a{
     text-align: center;
     text-decoration: none;
 }
-li.hide-icon-item:hover{
+.hide-icon-item:hover{
     background-color: #1abc9c;
 }
-button.basket:hover{
+.basket:hover{
     background-color: #1abc9c;
 }
-li.hide-icon-item:nth-child(2n){
+.hide-icon-item:nth-child(2n){
     margin-right: 7px;
 }
-li.hide-icon-item:last-child{
+.hide-icon-item:last-child{
     margin: 0px;
 }
-button.basket{
+.basket{
     display: block;
     width: 166px;
     height: 50px;
@@ -246,7 +255,7 @@ button.basket{
     bottom: 75px;
     left: 35px;
     box-shadow: none;
-    background-color: #323232;
+    background-color:#323232;
     font-family: "Pe 7 icon";
 }
 bdi.bask{
@@ -257,17 +266,17 @@ bdi.bask{
     color: #ffffff;
     vertical-align: 9px;
 }
-li.collection-item:hover .hide-icons{
+.collection-item:hover .hide-icons{
     opacity: 0.549;
       }
-p.image{
+.image{
     height: auto;
     width: 255px;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
-p.product-item{
+.product-item{
     position: absolute;
         display: block;
         float: left;
@@ -283,27 +292,29 @@ p.product-item{
         text-transform: uppercase;
     background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
 }
-span.product-cost{
+.product-cost{
     font-size: 18px;
     display: block;
     float: right;
+    margin: 0;
     padding: 13px;
     color: #ffffff;
     text-transform: uppercase;
 }
-span.product-name{
+.product-name{
     font-size: 18px;
     display: block;
+    margin: 0;
     width: 158px;
     float: left;
     padding: 13px;
     color: #ffffff;
     text-transform: uppercase;
 }
-li.collection-item:hover> .product-item{
+.collection-item:hover> .product-item{
     background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
 }
-footer.more-info{
+.more-info{
     height: 66px;
     line-height: 66px;
     text-align: center;
@@ -311,9 +322,7 @@ footer.more-info{
     color: #ffffff;
     background-color: #323232;
 }
-bdi{
+.color-graf{
     color: #45b8a3;
 }
-
-
   
