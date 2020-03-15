@@ -71,7 +71,8 @@ a.menu-link:hover{
     font-weight: normal;
     color: #777777;
 }
-footer{
+.contacts{
+    position: relative;  
     background-image: url(../img/bg-footer.jpg) ;
     min-height: 675px;
     width: 1400px;
@@ -134,9 +135,6 @@ footer{
     color: #bbbbbb;
     text-transform: uppercase;
     font-weight: bold;
-}
-.contacts{
-    position: relative;  
 }
 .send-button{
     border: none;
