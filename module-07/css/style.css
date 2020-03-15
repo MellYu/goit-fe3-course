@@ -72,7 +72,7 @@ a.menu-link:hover{
     color: #777777;
 }
 footer{
-    background-image: url(/module-07/img/bg-footer.jpg) ;
+    background-image: url(../img/bg-footer.jpg) ;
     min-height: 675px;
     width: 1400px;
     margin: 0 auto;
