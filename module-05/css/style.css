@@ -16,12 +16,10 @@ html{
 }
 .navigation-logo{
     display: block;
-    margin: 0px auto;
     padding: 0px;
     height: 91px;
 }
 .menu{
-    margin: 0px auto;
     padding: 38px 0px 32px;
     width: 1110px;
 }    
@@ -76,12 +74,9 @@ float: left;
     width: 1600px;
     height: 600px;
     position: relative;
-    margin: 0px;
-    margin-bottom: 101px;
 }
 .offers-image{
     position: relative;
-    margin: 0;
     padding: 0;
     height: 600px;
 }
@@ -158,14 +153,13 @@ img{
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    margin-bottom: 80px;
-    padding: 0;
+    padding: 101px 0px 80px 0px;
     width: 1598px;
     height: 83px;
 }
 .collection-title::after {
     position: absolute;
-    top: 82px;
+    top: 183px;
     left: 718px;
     content: '';
     display: block;
@@ -218,11 +212,10 @@ img{
     width: 48px;
     height: 48px;
     border: #ffffff solid 1px;
-    margin: 0px;
     float: left;
     margin-right: 9px;
     text-align: center;
-    line-height: 48px;
+    line-height: 44px;
 }
 .hide-icons-font{
     font-family: "Pe 7 icon";
@@ -272,7 +265,6 @@ bdi.bask{
 .image{
     height: auto;
     width: 255px;
-    margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
