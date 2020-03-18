@@ -73,24 +73,15 @@ float: left;
 .offers{
     display: block;
     height: 600px;
-    position: relative;
     background-image: url(../img/bc-img2.png);
     background-size: cover;
     background-position: center;
 }
-/* .offers-image{
-    position: relative;
-    padding: 0;
-    height: 600px;
-    width: 1110px;
-    background-size: cover;
-} */
-/* .image-bc{
-    opacity: 0.522;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
+.offers-menu{
+    display: block;
+    content: '';
+    position: relative; 
+}
 .offer-title{
     display: block;
     margin: 0;
@@ -104,7 +95,7 @@ float: left;
     color: #ffffff;
     position: absolute;
     top: 193px;
-    left: 215px;
+    left: 175px;
 }
 .offer-menu{
     display: block;
@@ -129,7 +120,6 @@ float: left;
 .less{
     position: absolute;
     top: 225px;
-    left: 30px;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -139,7 +129,7 @@ float: left;
 .more{
     position: absolute;
     top: 230px;
-    right: 30px;
+    right: 0px;
     margin: 0;
     color: #ffffff;
     font-family: "Pe 7 icon";
