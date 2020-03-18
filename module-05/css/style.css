@@ -17,13 +17,8 @@ html{
 }
 .navigation-logo{
     display: block;
-    padding: 0px;
-    height: 91px;
-}
-.menu{
-    padding: 38px 0px 32px;
-    width: 1110px;
-}    
+    padding: 34px 0px;
+}  
 .logo{
 float: left;
 }
