@@ -135,13 +135,16 @@ img{
     max-width: 100%;
     height: auto;
 }
+.collection{
+    margin: 100px auto;
+}
 .collection-title {
     position: relative;
     font: bold 48px/1.2 'Roboto', sans-serif;
     color: #515151;
     text-transform: uppercase;
     text-align: center;
-    margin: 101px 0px 87px 0px;
+    margin:0px 0px 87px 0px;
     height: 83px;
 }
 .collection-title::after {
@@ -158,7 +161,6 @@ img{
     display: block;
     height: 322px;
    padding: 0;
-   margin-bottom: 100px;
 }
 .collection-item{
     position: relative;
