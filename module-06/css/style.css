@@ -1,14 +1,15 @@
 .container{
     width: 1201px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .main-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px auto 107px;
     align-items: flex-end;
     min-height: 50px;
+    padding-bottom: 107px;
 }
 .loggo{
     display: flex;
@@ -19,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 491px;
     margin: 0;
     text-transform: uppercase;
     list-style: none;
@@ -27,6 +27,10 @@
 }
 .menu-item{
     position: relative;
+    margin-right: 57px;
+}
+.menu-item:last-child{
+    margin-right: 0px;
 }
 .menu-item::after{
     display: block;
@@ -55,20 +59,20 @@
 .first-title{
     display: flex;
     justify-content: center;
-    margin: 0px 0px 23px;
+    margin: 0px 0px;
     padding: 0;
     width: 100%;
-    font: normal 24px/1.2 'Kaushan Script',sans-serif;
+    font: normal 24px/1.6 'Kaushan Script',sans-serif;
     color: #333333;
 }
 .second-title{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin: 0px 0px 111px 0px;
+    margin: 0px 0px 99px 0px;
     padding: 0;
     position: relative;
-    font: bold 30px/1.2 'Montserrat',sans-serif;
+    font: bold 30px/1.6 'Montserrat',sans-serif;
     color: #333333;
 }
 .second-title::after{
@@ -128,8 +132,8 @@
 .our-team{
     display: flex;
     justify-content: space-between;
-    margin: 0 0 82px;
-    padding: 0;
+    margin-bottom: 0;
+    padding: 0 0 82px 0;
     list-style-type: none;
 }
 .team-member{
@@ -152,7 +156,7 @@
 }
 .basement{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     margin: 0 auto;
@@ -172,10 +176,8 @@ bdi{
     color: #333333;
 }
 .subscrible{
-    width: 150px;
-    height: 40px;
     margin: 0;
-    padding: 0px;
+    padding: 12px 28px;
     font: bold 14px/1.2 'Montserrat', sans-serif;
     color: #ffffff;
     text-transform: uppercase; 
@@ -200,13 +202,10 @@ bdi{
     display: block;
     content: '';
     opacity: 0.9;
-    box-shadow: 10px 10px #95e1d3;
-}
-.shadow{
-    transform: translate(-10px, -10px);
 }
 .photo:hover{
-    transition-property: shadow, transform;
+    box-shadow: 10px 10px #95e1d3;
+    transform: translate(-10px, -10px);
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
@@ -255,8 +254,9 @@ bdi{
 input{
     margin-left: auto;
     height: 26px;
-    padding: 6px 7px;
-    border: solid 1px #e7e7e7;
+    padding: 7px 7px;
+    border: none;
+    outline: 1px solid #e7e7e7;
 }
 ::placeholder{
     color: #cccccc;
