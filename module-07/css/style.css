@@ -3,13 +3,12 @@
     width: 940px;
 }
 .main-menu{
-    margin-bottom: 110px;
+    padding-bottom: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .item-list{
-    width: 485px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -19,10 +18,19 @@ a.menu-link:hover{
     content: '';
     color: #fed136;
 }
+:hover{
+    transform: none;
+    transition: linear;
+    transition-duration: 200ms;
+}
 .menu-item{
     text-decoration: none;
     text-transform: uppercase;
     font: 14px 'Merriweather regular', sans-serif;
+    margin-right: 41px;
+}
+.menu-item:last-child{
+    margin-right: 0px;
 }
 .menu-link{
     text-decoration: none;
@@ -51,9 +59,12 @@ a.menu-link:hover{
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
-    margin-bottom: 102px;
     padding: 0;
+    padding-bottom: 102px;
     align-items: center;
+}
+.serv-list img{
+    margin-bottom: 18px;
 }
 .serv-item{
     width: 290px;
@@ -63,6 +74,8 @@ a.menu-link:hover{
     font: 18px 'Merriweather bold', sans-serif;
     color: #222222;
     font-weight: bold;
+    margin: 0px;
+    margin-bottom: 18px;
 }
 .serv-item-description{
     text-align: center;
@@ -70,12 +83,14 @@ a.menu-link:hover{
     font-size: 14px;
     font-weight: normal;
     color: #777777;
+    margin: 0;
 }
 .contacts{
     position: relative;  
-    background-image: url(../img/bg-footer.jpg) ;
+    background-image: url(../img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 675px;
-    width: 1400px;
     margin: 0 auto;
 }
 .form-title{
@@ -100,7 +115,6 @@ a.menu-link:hover{
 }
 .form-box{
     width: 940px;
-    margin: 0 auto;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -112,12 +126,11 @@ a.menu-link:hover{
 .box-item{
     box-sizing: border-box;
     width: 455px;
-    height: 50px;
     margin-right: 28px;
     border: 1px solid #cccccc;
     border-radius: 2px;
     background-color: #ffffff;
-    padding: 0px 20px;
+    padding: 18px 20px;
 }
 .box-item-comment{
     border: 1px solid #cccccc;
@@ -125,7 +138,7 @@ a.menu-link:hover{
     border-radius: 5px;
     background-color: #ffffff;
     width: 455px;
-    height: 206px;
+    height: 209px ;
     resize: none;
     padding: 19px 20px 0px 20px;
 }
@@ -136,6 +149,9 @@ a.menu-link:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
+.contact-form{
+    position: relative;
+}
 .send-button{
     border: none;
     border-radius: 3px;
@@ -144,11 +160,10 @@ a.menu-link:hover{
     font: 14px 'Merriweather bold', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    width: 240px;
-    height: 65px;
+    padding: 25px 63px;
     position: absolute;
-    bottom: 115px;
-    left: 582px;
+    top: 240px;
+    left: 350px;
   }
 .validation:valid {
     border-radius: 3px;
