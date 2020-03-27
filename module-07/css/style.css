@@ -3,15 +3,17 @@
     width: 940px;
 }
 .main-menu{
-    padding-bottom: 110px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 .item-list{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
+    list-style-type: none; 
+    margin: 0px;
 }
 a.menu-link:hover{
     display: block;
@@ -27,7 +29,10 @@ a.menu-link:hover{
     text-decoration: none;
     text-transform: uppercase;
     font: 14px 'Merriweather regular', sans-serif;
-    margin-right: 41px;
+    margin: 50px 41px 110px 0px;
+}
+.logotipe{
+    margin: 50px 0 110px;
 }
 .menu-item:last-child{
     margin-right: 0px;
@@ -36,6 +41,7 @@ a.menu-link:hover{
     text-decoration: none;
     color: #222222;
 }
+
 .services{
     text-align: center;
 }
@@ -56,11 +62,11 @@ a.menu-link:hover{
 }
 .serv-list{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 102px;
     align-items: center;
 }
 .serv-list img{
@@ -68,6 +74,7 @@ a.menu-link:hover{
 }
 .serv-item{
     width: 290px;
+    margin-bottom: 102px;
   
 }
 .serv-item-title{
@@ -86,11 +93,9 @@ a.menu-link:hover{
     margin: 0;
 }
 .contacts{
-    position: relative;  
     background-image: url(../img/bg-footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 675px;
     margin: 0 auto;
 }
 .form-title{
@@ -102,6 +107,10 @@ a.menu-link:hover{
     font-weight: bold;
     text-align: center;
     
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
 }
 .form-description{
     margin: 0;
@@ -149,10 +158,8 @@ a.menu-link:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
-.contact-form{
-    position: relative;
-}
 .send-button{
+    margin-bottom: 65px;
     border: none;
     border-radius: 3px;
     background-color: #fed136;
@@ -161,9 +168,7 @@ a.menu-link:hover{
     font-weight: bold;
     text-transform: uppercase;
     padding: 25px 63px;
-    position: absolute;
-    top: 240px;
-    left: 350px;
+    align-self: center;
   }
 .validation:valid {
     border-radius: 3px;
