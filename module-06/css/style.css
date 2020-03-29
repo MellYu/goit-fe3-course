@@ -8,13 +8,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    min-height: 50px;
-    padding-bottom: 107px;
+    padding: 0;
+    margin-top: 27px;
+    margin-bottom: 107px;
 }
 .loggo{
     display: flex;
     width: 89px;
-    height: 23px;
 }
 .menu-list{
     display: flex;
@@ -93,8 +93,7 @@
 .services-items{
     display: flex;
     max-width: 382px;
-    min-height: 171px; 
-    height: auto;     
+    margin-bottom: 100px;
 }
 .icon{
     margin: 0px 30px;
@@ -120,8 +119,7 @@
 .preface{
     margin: 0 auto;
     width: 960px;
-    min-height: 130px;
-    height: auto;
+    margin-bottom: 90px;
     font-family: 'Roboto:400', sans-serif;
     font-size: 15px;
     line-height: 1.2;
@@ -131,13 +129,11 @@
 .our-team{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0;
-    padding: 0 0 82px 0;
+    margin-bottom: 82px;
+    padding: 0;
     list-style-type: none;
 }
 .team-member{
-    min-height: 130px;
-    height: auto;
     position: relative;
 }
 .member-name{
@@ -159,8 +155,7 @@
     align-items: center;
     background-color: #ffffff;
     margin: 0 auto;
-    min-height: 62px;
-    height: auto;
+    padding: 10px 0;
     border: 1px;
     border-top:#e5e5e5;
 
@@ -187,7 +182,6 @@ bdi{
     margin: 0;
     margin-bottom: 29px;
     padding: 0;
-    height: 470px;
     position: relative;
 }
 .shadow{
@@ -195,7 +189,6 @@ bdi{
     bottom: 0px;
     right: 0px;
     opacity: 0;
-    height: 470px;
 }
 .photo:hover .shadow{
     display: block;
@@ -252,8 +245,7 @@ bdi{
 }
 input{
     margin-left: auto;
-    height: 26px;
-    padding: 7px 7px;
+    padding: 10px 7px;
     border: none;
     outline: 1px solid #e7e7e7;
 }
