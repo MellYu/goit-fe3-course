@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 50px 0 110px;
 }
 .item-list{
     display: flex;
@@ -29,10 +30,7 @@ a.menu-link:hover{
     text-decoration: none;
     text-transform: uppercase;
     font: 14px 'Merriweather regular', sans-serif;
-    margin: 50px 41px 110px 0px;
-}
-.logotipe{
-    margin: 50px 0 110px;
+    margin-right: 41px;
 }
 .menu-item:last-child{
     margin-right: 0px;
@@ -43,11 +41,13 @@ a.menu-link:hover{
 }
 
 .services{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 .serv-title{
     margin: 0;
-    font: 40px 'Merriweather bold', sans-serif;
+    font: 40px/75px 'Merriweather bold', sans-serif;
     color: #222222;
     text-transform: uppercase;
     font-weight: bold;
@@ -57,7 +57,6 @@ a.menu-link:hover{
     margin-bottom: 54px;
     font: 16px 'Radley italic', sans-serif;
     font-style: italic;
-    padding: 11px;
     color: #777777;
 }
 .serv-list{
@@ -66,16 +65,16 @@ a.menu-link:hover{
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 102px;
     padding: 0;
     align-items: center;
+    overflow: auto;
 }
 .serv-list img{
     margin-bottom: 18px;
 }
 .serv-item{
-    width: 290px;
-    margin-bottom: 102px;
-  
+    width: 290px; 
 }
 .serv-item-title{
     font: 18px 'Merriweather bold', sans-serif;
@@ -96,12 +95,16 @@ a.menu-link:hover{
     background-image: url(../img/bg-footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     margin: 0 auto;
+}
+.firm-contacts{
+    padding: 114px 0px;
 }
 .form-title{
     margin: 0;
-    padding: 110px 0 0 0 ;
-    font: 40px 'Merriweather bold', sans-serif;
+    padding: 0;
+    font: 40px/1.6 'Merriweather bold', sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
@@ -115,27 +118,28 @@ a.menu-link:hover{
 .form-description{
     margin: 0;
     margin-bottom: 57px;
-    padding: 11px;
-    font: 16px 'Radley italic', sans-serif;
+    font: 16px/1.2 'Radley italic', sans-serif;
     font-style: italic;
-    padding: 11px;
     color: #777777;
     text-align: center;
 }
 .form-box{
-    width: 940px;
+    margin-bottom: 29px;
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 210px; 
 }
+.form-box_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .box-item{
     box-sizing: border-box;
     width: 455px;
-    margin-right: 28px;
     border: 1px solid #cccccc;
     border-radius: 2px;
     background-color: #ffffff;
@@ -159,7 +163,6 @@ a.menu-link:hover{
     font-weight: bold;
 }
 .send-button{
-    margin-bottom: 65px;
     border: none;
     border-radius: 3px;
     background-color: #fed136;

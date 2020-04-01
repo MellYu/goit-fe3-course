@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="sizes">
-        <section class="container">
+        <div class="container">
         <nav class="main-menu">
             <img class="logotipe" src="img/logo.png" alt="Golden">
         <ul class="item-list">
@@ -22,11 +22,11 @@
             <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
         </ul>
     </nav>
-</section>
+</div>
     </header>
 
     <main>
-        <section class="container">
+        <div class="container">
         <div class="services">
             <h2 class="serv-title">Services</h2>
             <p class="description">Proin iaculis purus consequat sem cure.</p>
@@ -54,22 +54,28 @@
                 </li>
             </ul>
         </div>
-    </section>
-    </main>
-    <footer class="contacts">
-        <section class="container">
+    </div>
+</main>
+<footer>
+    <div class="contacts">
+        <div class="container">
+            <div class="firm-contacts">
             <h2 class="form-title">Contact us</h2>
             <p class="form-description">Proin iaculis purus consequat sem cure.</p>
-            <form class="contact-form" action="#" method="GET">       
-            <ul class="form-box">
-            <li><input class="box-item validation" name="user_name" type="text"  placeholder="Your name *" required></li>
-            <li><input class="box-item validation" name="user_email" type="email"  placeholder="Your E-mail *" required></li>
-            <li><input class="box-item" name="subject" type="text"  placeholder="Subject"></li>
-            <li><textarea class="box-item-comment validation" name="user_message" id="" cols="30" rows="10" placeholder="Your message *" required></textarea></li>
-        </ul>
-        <button class="send-button">Send message</button>
-        </form>
-    </section>
-    </footer>
+            <form class="contact-form" action="#" method="GET">
+                <div class="form-box">
+                    <div class="form-box_inputs">
+                    <input class="box-item validation" name="user_name" type="text"  placeholder="Your name *" required>
+                    <input class="box-item validation" name="user_email" type="email"  placeholder="Your E-mail *" required>
+                    <input class="box-item" name="subject" type="text"  placeholder="Subject">
+                </div>
+                    <textarea class="box-item-comment validation" name="user_message" id="" cols="30" rows="10" placeholder="Your message *" required></textarea>
+                </div>
+                <button class="send-button">Send message</button>
+                </form>
+        </div>
+    </div>
+    </div>
+</footer>
 </body>
 </html>
