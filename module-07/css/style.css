@@ -92,6 +92,7 @@ a.menu-link:hover{
     margin: 0;
 }
 .contacts{
+    display: flex;
     background-image: url(../img/bg-footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +100,8 @@ a.menu-link:hover{
     margin: 0 auto;
 }
 .firm-contacts{
-    padding: 114px 0px;
+    margin: 114px 0px;
+    padding: 0;
 }
 .form-title{
     margin: 0;
