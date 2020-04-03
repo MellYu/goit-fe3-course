@@ -171,6 +171,7 @@ bdi{
 }
 .subscrible{
     margin: 0;
+    width: 150px;
     padding: 12px 28px;
     font: bold 14px/1.2 'Montserrat', sans-serif;
     color: #ffffff;
@@ -245,6 +246,7 @@ bdi{
 }
 input{
     margin-left: auto;
+    margin-right: -4px;
     padding: 10px 7px;
     border: none;
     outline: 1px solid #e7e7e7;
@@ -252,4 +254,7 @@ input{
 ::placeholder{
     color: #cccccc;
     font: 15px/24px "Roboto" lighter italic, sans-serif;
+}
+.mail-form{
+    width: 380px;
 }
