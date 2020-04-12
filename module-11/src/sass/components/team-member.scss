@@ -1,0 +1,33 @@
+.team-member{
+  width: 380px;
+  margin-right: 20px;
+
+  &:last-child{
+    margin-right: 0px;
+  }
+      
+}
+
+.team-member{
+  &__photo--hover{
+    position: relative; 
+    margin-bottom: 28px;   
+  }
+
+  &__name{
+    font: 14px/1.2 $font-montserrat;
+    font-weight: normal;
+    color: $text-grey-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__position{
+    font: 15px/24px $font-roboto;
+    font-weight: normal;
+    font-style: italic;
+    color: $second-grey-color;
+    text-align: center;
+  }    
+
+}

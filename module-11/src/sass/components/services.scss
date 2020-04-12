@@ -1,0 +1,44 @@
+.main-services{
+  padding: 45px 0 0 0;
+  text-align: center;
+
+  &__slogan{
+    margin: 0px;
+    font: 24px/1.2 $font-kaushan;
+    font-weight: normal;
+    color: $text-grey-color;
+  }
+
+  &__title{
+    font: 30px/1.2 $font-montserrat;
+    font-weight: bold;
+    color: $text-grey-color;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      top: 73px;
+      left: 570px;
+      display: block;
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: $after-red-color;
+    }
+      
+  }
+
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+}
+
+ 

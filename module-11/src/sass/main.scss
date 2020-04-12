@@ -1,0 +1,18 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables';
+@import 'normalize';
+@import 'base';
+
+
+@import 'components/container';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/navigation';
+@import 'components/items';
+@import 'components/services';
+@import 'components/team';
+@import 'components/team-member';
+@import 'components/shadow';
+@import 'components/footer';

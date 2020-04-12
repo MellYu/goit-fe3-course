@@ -1,0 +1,47 @@
+.basement{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-white-color;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-top: 1px solid $input-light-color;
+
+  &__signature{
+    margin: 0;
+    padding: 0;
+    font: normal 14px/1.2 $font-montserrat;
+    color: $text-grey-color;
+  }
+ 
+}
+
+bdi{
+  color: $after-red-color;
+}
+
+.mail-form{
+  &__subscrible{
+    margin: 0;
+    width: 150px;
+    padding: 12px 28px;
+    font: bold 14px/1.2 $font-montserrat;
+    color: $primary-white-color;
+    text-transform: uppercase; 
+    border: none;
+    background-color: $service-icons-fill; 
+  }
+    
+  &__input{
+    margin-left: auto;
+    margin-right: -4px;
+    padding: 10px 7px;
+    border: none;
+    outline: 1px solid $input-white-color;
+  }
+      
+}
+
+.basemment__mail-form{
+  width: 380px;
+}

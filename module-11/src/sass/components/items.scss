@@ -1,0 +1,30 @@
+.items-part{
+  display: flex;
+  width: 380px;
+  text-align: start;
+  margin-right: 20px;
+  margin-bottom: 80px;
+
+  &:nth-child(3n+3){
+    margin-right: 0px;
+  }
+  
+
+  &__title{
+    margin: 0;
+    font: 14px/1.2 $font-montserrat;
+    font-weight: normal;
+    color: $text-grey-color;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    font: 15px/24px $font-roboto;
+    font-weight: normal;
+    color: $text-grey-color;
+  }
+
+  &__iconsize{
+    width: 80px;
+  } 
+}

@@ -1,0 +1,31 @@
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+
+  &__item{
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-right: 57px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $primary-white-color;
+    position: relative;
+
+    &:hover, &:focus{
+      color: $nav-hover-color;
+      padding-bottom: 12px;
+      border-bottom: 3px solid $nav-hover-color;
+    }
+  }
+
+}
+
