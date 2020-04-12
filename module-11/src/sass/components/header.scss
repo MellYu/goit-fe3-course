@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(/images/title.jpg);
+  background-image: url(../images/title.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-resolution: 192dpi){
   .header{
-    background-image: url(/images/title@2x.jpg);
+    background-image: url(../images/title@2x.jpg);
   }
 }
 
