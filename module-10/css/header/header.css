@@ -2,6 +2,7 @@
 
 .header{
     margin: 0 auto;
+    padding: 28px 0 230px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -35,7 +36,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 28px 0 185px;
+            margin-bottom: 185px;
 }
 .header__slogan{
     font: 72px/1.2 "Kaushan Script", sans-serif;
@@ -52,7 +53,6 @@
     padding: 0px;
 }
 .header__btn{
-    margin-bottom: 230px;
     padding: 12px 30px;
     font: 14px/1.2 "Montserrat", sans-serif;
     font-weight: bold;
@@ -61,4 +61,11 @@
     border: 3px solid #ffffff;
     text-transform: uppercase;
 }
-  
+.header-icons:hover{
+    fill: #fce38a;
+}
+.header-icons{
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}

@@ -1,5 +1,6 @@
 .team{
-    margin: 0px auto 60px;
+    margin: 0px auto;
+    padding-bottom: 60px;
 }
 .team__slogan{
 margin: 0px;
@@ -41,28 +42,25 @@ text-align: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            margin: 0 auto;
     margin-bottom: 60px;
     padding: 0px;
 }
-.team-member{
+.team__member{
     width: 380px;
-    margin-right: 20px;
 }
-.team-member:last-child{
-    margin-right: 0px;
-}
-.team-member__photo--hover{
+.member__photo--hover{
     position: relative; 
     margin-bottom: 28px;   
 }
-.team-member__name{
+.member__name{
     font: 14px/1.2 "Montserrat", sans-serif;
     font-weight: normal;
     color: #333333;
     text-transform: uppercase;
     text-align: center;
 }
-.team-member__position{
+.member__position{
     font: 15px/24px "Roboto", sans-serif;
     font-weight: normal;
     font-style: italic;

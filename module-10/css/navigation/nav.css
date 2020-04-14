@@ -30,11 +30,3 @@
     padding-bottom: 12px;
     border-bottom: 3px solid #fce38a;
 }
-/* .header-icons{
-    display: block;
-    background-image: url(../../img/icomoon/symbol-defs#icon-dolly.svg);
-    fill: black;
-} */
-.header-icons:hover{
-    fill: #fce38a;
-}
