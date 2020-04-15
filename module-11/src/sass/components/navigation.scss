@@ -1,9 +1,13 @@
-.nav-menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px;
+.menu{
+  &__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+  }
+}
 
+.nav{
   &__item{
     text-transform: uppercase;
     list-style-type: none;
@@ -15,6 +19,9 @@
 
   }
 
+}
+
+.item{
   &__link{
     text-decoration: none;
     color: $primary-white-color;
@@ -26,6 +33,5 @@
       border-bottom: 3px solid $nav-hover-color;
     }
   }
-
 }
 

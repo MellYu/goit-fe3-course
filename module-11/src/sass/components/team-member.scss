@@ -1,14 +1,9 @@
-.team-member{
+.member{
   width: 380px;
-  margin-right: 20px;
-
-  &:last-child{
-    margin-right: 0px;
-  }
-      
+   
 }
 
-.team-member{
+.member{
   &__photo--hover{
     position: relative; 
     margin-bottom: 28px;   

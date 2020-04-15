@@ -1,5 +1,6 @@
 .header{
   margin: 0 auto;
+  padding: 28px 0 230px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -21,7 +22,7 @@
   justify-content: space-between;
   padding: 0;
   align-items: center;
-  margin: 28px 0 185px;
+  margin-bottom: 185px;
 }
 
 .header__slogan{
@@ -41,7 +42,7 @@
 }
 
 .header__btn{
-  margin-bottom: 230px;
+  margin: 0;
   padding: 12px 30px;
   font: 14px/1.2 $font-montserrat;
   font-weight: bold;

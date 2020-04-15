@@ -1,15 +1,14 @@
-.items-part{
-  display: flex;
-  width: 380px;
-  text-align: start;
-  margin-right: 20px;
-  margin-bottom: 80px;
-
-  &:nth-child(3n+3){
-    margin-right: 0px;
+.items{
+  &__items-part{
+    display: flex;
+    width: 380px;
+    text-align: start;
+    margin-bottom: 80px;
   }
-  
 
+}
+
+.items-part{
   &__title{
     margin: 0;
     font: 14px/1.2 $font-montserrat;
