@@ -43,7 +43,7 @@ text-align: center;
         -ms-flex-pack: justify;
             justify-content: space-between;
             margin: 0 auto;
-    margin-bottom: 60px;
+    margin: 0px;
     padding: 0px;
 }
 .team__member{
