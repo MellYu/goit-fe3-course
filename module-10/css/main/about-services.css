@@ -1,0 +1,12 @@
+.about-services__title{
+    margin: 0;
+    font: 14px/1.2 "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #333333;
+    text-transform: uppercase;
+}
+.about-services__text{
+    font: 15px/24px "roboto", sans-serif;
+    font-weight: normal;
+    color: #333333;
+}

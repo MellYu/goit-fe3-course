@@ -1,0 +1,21 @@
+.about-services{
+  &__title{
+    margin: 0;
+    font: 14px/1.2 $font-montserrat;
+    font-weight: normal;
+    color: $text-grey-color;
+    text-transform: uppercase;
+  }
+  
+  &__text{
+    font: 15px/24px $font-roboto;
+    font-weight: normal;
+    color: $text-grey-color;
+  }
+  
+  &__iconsize{
+    width: 80px;
+  } 
+  
+}
+  
