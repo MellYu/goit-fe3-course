@@ -1,11 +1,12 @@
 .hat{
-    margin-bottom: 67px;
-    min-height: 540px;
     text-align: center;
     background-image: url(../img/bc-image-desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.main-menu{
+    padding-bottom: 140px;
 }
 .signup-menu{
     padding-top: 20px;
@@ -54,6 +55,9 @@
     color: #ffffff;
     font-weight: 300;
 }
+.first-section{
+    padding: 67px 0px;
+}
 .firm-partners{
     margin: 0 -10px;
     padding: 15px 45px;
@@ -97,7 +101,6 @@
 .more-partners{
     box-sizing: border-box;
     margin: 0 20px;
-    margin-bottom: 25px;
     width: 284px;
     padding: 11px 0px;
     border: 2px solid #ff4e50;
@@ -118,13 +121,9 @@
     color: #666666;
     } 
 
-
 @media (min-width: 767px){
-        .container{
-            width: 748px;
-        }
         .main-menu{
-            min-height: 700px;
+            padding-bottom: 235px;
         }
         .signup-menu{
             padding: 48px 40px 17px;
@@ -179,12 +178,12 @@
             text-align: center;
         }
     }
-    @media (min-width: 1200px){
+    @media (min-width: 1199px){
         .container{
             width: 942px;
         }
         .main-menu{
-            min-height: 700px;
+            padding-bottom: 235px;
             max-width: 1440px;
         }
         .signup-menu{
