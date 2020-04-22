@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container{
+    margin: 0 auto;
+    padding: 0;
+}
 .main-menu{
     padding-bottom: 140px;
 }
@@ -13,6 +17,7 @@
 }
 .register-form{
     margin-bottom: 116px;
+    padding-left: 50px;
 }
 .signup-item{
     min-width: 90px;
@@ -32,7 +37,6 @@
     color: #ffffff;
 }
 .firm-logo{
-    margin-bottom: 29px;
     font: 20px/1.2 "Montserrat", sans-serif;
     color: #ffffff;
     font-weight: 700;
@@ -92,8 +96,8 @@
 }
 .member-icon{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 70px;
+    right: 60px;
 }
 .partner-card{
     padding: 0 37px;
@@ -126,8 +130,12 @@
             padding-bottom: 235px;
         }
         .signup-menu{
-            padding: 48px 40px 17px;
             min-height: 0px;
+            margin-bottom: 116px;
+        }
+        .register-form{
+            margin: 0px;
+            padding: 0px;
         }
         .firm-title{
             margin: 0 0 30px;
@@ -177,6 +185,9 @@
         .partner-button{
             text-align: center;
         }
+        .member-icon{
+            right: 55px;
+        }
     }
     @media (min-width: 1199px){
         .container{
@@ -187,11 +198,7 @@
             max-width: 1440px;
         }
         .signup-menu{
-            margin-bottom: 44px;
-            padding: 48px 0px 2px;
-        }
-        .firm-slogan{
-            margin-bottom: 10px;
+           padding: 48px 0px 2px;
         }
         .firm-partners:focus,
         .firm-partners:hover{
@@ -202,7 +209,8 @@
             padding: 0 140px;
         }
         .partners{
-            padding: 33px 0 0 0 ;
+            margin-top: 33px;
+            padding: 0 ;
         }
         .partner-card{
             width: 220px;
@@ -220,5 +228,8 @@
         }
         .partner-card:nth-child(n+3) {
             margin-bottom: 40px;
+    } 
+    .member-icon{
+        right: 45px;
     }
     }
