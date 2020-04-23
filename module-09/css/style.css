@@ -11,13 +11,13 @@
 }
 .main-menu{
     padding-bottom: 140px;
+    padding-top: 20px;
 }
 .signup-menu{
-    padding-top: 20px;
+    padding: 0px;
 }
 .register-form{
     margin-bottom: 116px;
-    padding-left: 50px;
 }
 .signup-item{
     min-width: 90px;
@@ -63,15 +63,18 @@
     padding: 67px 0px;
 }
 .firm-partners{
-    margin: 0 -10px;
-    padding: 15px 45px;
+    margin: 0;
+    width: 280px;
+    padding: 15px;
     background-color: #FF4E50;
-    font: 14px/1.2 "Montserrat", sans-serif ;
-    color: #ffffff;
-    font-weight: 700;
     border: none;
     border-radius: 50px;
     text-decoration: none;
+}
+.firm-partners a{
+    font: 14px/1.2 "Montserrat", sans-serif ;
+    color: #ffffff;
+    font-weight: 700;
 }
 .partners-title{
     margin: 0;
@@ -87,20 +90,21 @@
     text-align: center;
     list-style-type: none;
 }
-.member-images{
-    padding: 51px 0px;
-    position: relative;
-}
 .member-photo{
     margin-bottom: 20px;
+    position: relative;
 }
 .member-icon{
     position: absolute;
-    bottom: 70px;
-    right: 60px;
+    right: 110px;
+    top: 85px;
 }
 .partner-card{
     padding: 0 37px;
+    margin-bottom: 20px;
+}
+.partner-card:last-child{
+    margin-bottom: 0px;
 }
 .more-partners{
     box-sizing: border-box;
@@ -120,6 +124,7 @@
     color: #333333;
 }
 .some-member-info{
+    margin-bottom: 0;
     font: 14px/1.2 'Roboto', sans-serif;
     font-weight: 300;
     color: #666666;
@@ -158,11 +163,8 @@
             margin: 0 auto;
             padding: 12px 0;
             text-decoration: none;
-            color: #ffffff;
             border-radius: 20px;
             background-color: #ff4e50;
-            font: 14px/1.2 'Montserrat', sans-serif;
-            font-weight: 700;
         }
         .partners{
            padding: 0;
@@ -170,7 +172,7 @@
         .partner-card{
             width: 236px;
             margin: 0 auto;
-            padding: 0;
+            padding: 0px;
             margin-bottom: 60px;
         }
         .partner-card:last-child{
@@ -186,19 +188,29 @@
             text-align: center;
         }
         .member-icon{
-            right: 55px;
+            right: 126px;
+            top: 80px;
         }
     }
+    
+@media (min-width: 1023px){
+.member-icon {
+    right: 50px;
+    top: 80px;
+}
+}
+
     @media (min-width: 1199px){
         .container{
             width: 942px;
         }
         .main-menu{
+            padding-top: 48px;
             padding-bottom: 235px;
             max-width: 1440px;
         }
         .signup-menu{
-           padding: 48px 0px 2px;
+           padding: 0px;
         }
         .firm-partners:focus,
         .firm-partners:hover{
@@ -209,13 +221,12 @@
             padding: 0 140px;
         }
         .partners{
-            margin-top: 33px;
+            margin: 0;
             padding: 0 ;
         }
         .partner-card{
             width: 220px;
-            margin-right: 20px;
-            margin-bottom: 40px;
+            padding: 0px;
         }
         .partner-card:nth-child(3n){
             margin-bottom: 40px; 
