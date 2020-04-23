@@ -41,4 +41,46 @@
   
 }
 
- 
+.about-services{
+  &__title{
+    margin: 0;
+    font: 14px/1.2 $font-montserrat;
+    font-weight: normal;
+    color: $text-grey-color;
+    text-transform: uppercase;
+  }
+  
+  &__text{
+    font: 15px/24px $font-roboto;
+    font-weight: normal;
+    color: $text-grey-color;
+  }
+  
+  &__iconsize{
+    width: 80px;
+  } 
+  
+}
+
+.items{
+  &__item-part{
+    display: flex;
+    width: 380px;
+    text-align: start;
+    margin-bottom: 80px;
+  }
+
+}
+
+.items__item-part:nth-last-child(-n+3){
+  margin-bottom: 0px;
+}
+
+.icon-size__item{
+  display: block;
+  width: 32px;
+  height: 32px;
+  vertical-align: 18px;
+  fill: $service-icons-fill;
+  margin: 0px 24px;
+}

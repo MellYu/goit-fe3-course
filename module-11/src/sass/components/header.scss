@@ -51,4 +51,50 @@
   border: 3px solid $primary-white-color;
   text-transform: uppercase;
 }
-  
+
+.menu{
+  &__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+  }
+}
+
+.nav{
+  &__item{
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-right: 57px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+  }
+
+}
+
+.item{
+  &__link{
+    text-decoration: none;
+    color: $primary-white-color;
+    position: relative;
+
+    &:hover, &:focus{
+      color: $nav-hover-color;
+      padding-bottom: 12px;
+      border-bottom: 3px solid $nav-hover-color;
+    }
+  }
+}
+
+.header-icons{
+  width: 20px;
+  height: 20px;
+  fill: $primary-white-color;
+
+  &:hover{
+    fill: $nav-hover-color;
+  }
+}

@@ -48,3 +48,94 @@
   }
   
 }
+
+.member{
+  width: 380px;
+   
+}
+
+.member{
+  &__photo--hover{
+    position: relative; 
+    margin-bottom: 28px;   
+  }
+
+  &__name{
+    font: 14px/1.2 $font-montserrat;
+    font-weight: normal;
+    color: $text-grey-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__position{
+    font: 15px/24px $font-roboto;
+    font-weight: normal;
+    font-style: italic;
+    color: $second-grey-color;
+    text-align: center;
+  }    
+
+}
+
+.shadow{
+  position: absolute;
+  top: 0px;
+  display: none;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    width: 224px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 207px;
+    left: 78px;
+  }
+
+  &__link{
+    width: 55px;
+    height: 55px;
+    background-color: $nav-hover-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link:focus,
+    &__link:hover{
+      background-color: $after-red-color;
+    }
+    
+  }
+  
+  &__photo{
+    width: 100%;
+    height: 470px;
+  }
+  
+  
+}
+
+
+.member__photo--hover:focus .shadow,
+.member__photo--hover:hover .shadow{
+  display: block;
+  border: none;
+  opacity: 0.9;
+  box-shadow: 10px 10px $service-icons-fill;
+  transform: translate(-10px, -10px);
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+
+.shadow__link:focus .socicon-size,
+.shadow__link:hover .socicon-size{
+  fill: $primary-white-color;
+}
+
+.socicon-size{
+  width: 26px;
+  height: 26px;
+  fill: $after-red-color;
+}
