@@ -87,17 +87,37 @@
 }
 .partners{
     padding: 0;
+    margin-bottom: 25px;
     text-align: center;
     list-style-type: none;
 }
-.member-photo{
+.member-images{
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
     margin-bottom: 20px;
     position: relative;
 }
-.member-icon{
+
+.member-images::before{
+    content: "";
+    width: 40px;
+    height: 40px;
     position: absolute;
-    right: 110px;
-    top: 85px;
+    bottom: 0px;
+    right: 0px;
+}
+.tv-icon::before{
+    content: url(../img/icon-member-01.png);
+}
+.cup-icon::before{
+    content: url(../img/icon-member-02.png);
+}
+.bottel-icon::before{
+    content: url(../img/icon-member-03.png);
+}
+.telegram-icon::before{
+    content: url(../img/icon-member-04.png);
 }
 .partner-card{
     padding: 0 37px;
@@ -167,6 +187,7 @@
             background-color: #ff4e50;
         }
         .partners{
+            margin-bottom: 40px;
            padding: 0;
         } 
         .partner-card{
@@ -187,19 +208,8 @@
         .partner-button{
             text-align: center;
         }
-        .member-icon{
-            right: 126px;
-            top: 80px;
-        }
     }
     
-@media (min-width: 1023px){
-.member-icon {
-    right: 50px;
-    top: 80px;
-}
-}
-
     @media (min-width: 1199px){
         .container{
             width: 942px;
@@ -222,14 +232,13 @@
         }
         .partners{
             margin: 0;
+            margin-bottom: 40px;
             padding: 0 ;
         }
         .partner-card{
             width: 220px;
             padding: 0px;
-        }
-        .partner-card:nth-child(3n){
-            margin-bottom: 40px; 
+            margin: 0px;
         }
         .partner-card:last-child{
             margin-right: 0px;
@@ -237,10 +246,5 @@
         .more-partners{
             width: 184px;
         }
-        .partner-card:nth-child(n+3) {
-            margin-bottom: 40px;
-    } 
-    .member-icon{
-        right: 45px;
-    }
+
     }
