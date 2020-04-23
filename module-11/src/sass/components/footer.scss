@@ -13,6 +13,10 @@
     font: normal 14px/1.2 $font-montserrat;
     color: $text-grey-color;
   }
+
+  &__mail-form{
+    width: 380px;
+  }
  
 }
 
@@ -42,6 +46,3 @@ bdi{
       
 }
 
-.basemment__mail-form{
-  width: 380px;
-}

@@ -8,15 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-resolution: 192dpi){
-  .header{
-    background-image: url(../images/title@2x.jpg);
-  }
-}
-
-.header__menu{
+  
+&__menu{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,14 +18,14 @@
   margin-bottom: 185px;
 }
 
-.header__slogan{
+&__slogan{
   font: 72px/1.2 $font-kaushan;
   font-weight: normal;
   color: $primary-white-color;
   margin: 0px auto 60px;
 }
 
-.header__title{
+&__title{
   font: 150px/140px $font-montserrat;
   font-weight: bold;
   color: $primary-white-color;
@@ -41,7 +34,7 @@
   padding: 0px;
 }
 
-.header__btn{
+&__btn{
   margin: 0;
   padding: 12px 30px;
   font: 14px/1.2 $font-montserrat;
@@ -50,6 +43,14 @@
   background: none;
   border: 3px solid $primary-white-color;
   text-transform: uppercase;
+}
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-resolution: 192dpi){
+  .header{
+    background-image: url(../images/title@2x.jpg);
+  }
 }
 
 .menu{
