@@ -1,0 +1,176 @@
+.solution{
+  padding: 49px 20px 53px;
+  text-align: center;
+  background-color: $grey-col;
+
+  @media (min-width:768px){
+    padding: 75px 40px 30px;
+  }
+
+  @media (min-width:1280px){
+    padding: 95px 35px 100px;
+  }
+
+  @media (min-width:1680px){
+    padding: 134px 175px 135px;
+  }
+
+  &__title{
+    margin: 0;
+    margin-bottom: 28px;
+    font: 20px/33px 'Mont-900';
+    color: $black-text;
+
+    @media (min-width:768px){
+      font: 26px/33px 'Mont-900';
+    }
+
+    @media (min-width:1280px){
+      font: 42px/62.54px 'Mont-900';
+      text-align: start;
+      margin-bottom: 54px;
+    }
+
+    @media (min-width:1680px){
+      font: 45.83px/62.54px 'Mont-900';
+      text-align: start;
+      margin-bottom: 61px;
+    }
+  }
+
+  &__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width:768px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      padding: 0px 25px;
+    } 
+
+    @media (min-width:1280px){
+      padding: 0px;
+    }
+
+    @media (min-width:1680px)
+    {
+      justify-content: space-between;
+    }
+  }
+}
+
+.solution-item{
+  padding: 30px 26px;
+  background-color: $primary-white;
+  margin-bottom: 16px;
+  width: 290px;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+
+  @media (min-width:1280px){
+    width: 390px;
+    margin-right: 20px;
+
+    &:nth-child(3n+3){
+      margin-right: 0px;
+    }
+  }
+
+  @media (min-width:1680px){
+    width: 430px;
+  }
+
+  &:focus,
+  &:hover,{
+    background-color: $orange-full;
+
+    & .solution-item{
+      &__icon{
+        fill: $primary-white;
+      }
+
+      &__title{
+        color: $primary-white;
+
+        &::after{
+          background-color: $primary-white;
+        }
+      }
+
+      &__text{
+        color: $primary-white;
+      }
+        
+    }
+  }
+
+  &__icon{
+    width: 52px;
+    height: 45px;
+    fill: $orange-light;
+    margin: 0 auto;
+
+    @media (min-width:1280px){
+      width: 62px;
+      height: 44px;
+    }
+  }
+
+  &__title{
+    margin: 0px;
+    font: 13px/20px 'Mont-700';
+    color: $black-text;
+    position: relative;
+    padding-bottom: 16px;
+
+    @media (min-width:1280px){
+      font: 18px/29.17px 'Mont-700';
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px 'Mont-700';
+    }
+
+    &::after{
+      display: block;
+      content: ' ';
+      width: 25px;
+      height: 2px;
+      background-color: $orange-full;
+      position: absolute;
+      bottom: 0px;
+      left: 98px;
+
+      @media (min-width:1280px){
+        left: 158px;
+      }
+    }
+  }
+
+  &__text{
+    font: 11px/20px 'Mont-400';
+    color: $grey-light-text;
+
+    @media (min-width:1280px){
+      font: 14px/31.25px 'Mont-400';
+    }
+
+    @media (min-width:1680px){
+      font: 18.75px/31.25px 'Mont-400';
+    }
+  }
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+
+  @media (min-width:768px){
+    margin-bottom: 20px;
+
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+}

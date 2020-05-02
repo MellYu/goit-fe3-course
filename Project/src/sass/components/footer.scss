@@ -1,0 +1,25 @@
+.footer{
+  &__text{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: $black-bg;
+    font: 11px/37.5px 'Mont-400';
+    color: $grey-text;
+
+    @media (min-width:768px) {
+      text-align: start;
+      padding: 20px 40px;
+    }
+
+    @media (min-width:1280px) {
+      padding: 20px 35px;
+      font: 14.58px/37.5px 'Mont-400';
+    }
+
+    @media (min-width:1680px) {
+      padding: 20px 180px;
+      font: 14.58px/37.5px 'Mont-400';
+    }
+
+  }
+}

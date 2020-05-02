@@ -1,0 +1,360 @@
+.program{
+  margin: 0 auto;
+  padding: 52px 20px 0px;
+  background-image: linear-gradient($black-bg 90%, $primary-white 10%);
+  position: relative;
+
+  @media (min-width:768px){
+    padding: 65px 40px 0px;
+  }
+
+  @media (min-width:1280px){
+    padding: 80px 35px 0px;
+    background-color: $black-bg;
+    background-image: none;
+  }
+
+  @media (min-width:1680px){
+    padding: 130px 180px 0px;
+    background-image: linear-gradient($black-bg 90%, $primary-white 10%);
+  }
+
+  &__title{
+    text-align: center;
+    font: 20px/33px 'Mont-900';
+    color: $primary-white;
+
+    @media (min-width:768px){
+      font: 26px/62.54px 'Mont-900';
+      text-align: start;
+    }
+
+    @media (min-width:1280px){
+      font: 42px/62.54px 'Mont-900';
+      
+      &::after{
+        display: block;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: $grey-light-text;
+        position: absolute;
+        top: 220px;
+        left: 0px;
+
+        @media (min-width:1680px){
+          top: 270px;
+        }
+      }
+    }
+
+    @media (min-width:1680px){
+      font: 45.83px/62.54px 'Mont-900';
+    }
+
+  }
+
+  &__list{
+    list-style-type: none;
+    color: $primary-white;
+  }
+
+  &__photo{
+    position: absolute;
+    right: 0; 
+    bottom: 430px;
+
+    @media (min-width:768px){
+      bottom: 465px;
+    }
+
+    @media (min-width:1280px) {
+      left: 0;
+      bottom: 255px;
+    }
+  }
+}
+
+.transfer{
+  padding-right: 125px;
+}
+
+.program-list{
+  padding-left: 55px;
+  margin-bottom: 45px;
+
+  @media (min-width:768px){
+    padding-left: 87px;
+    margin-bottom: 140px;
+  }
+
+  @media (min-width:1280px){
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  &__item{
+    padding-bottom: 37px;
+    position: relative;
+
+    &:last-child{
+      padding-bottom: 0px;
+
+      &::before{
+        display: none;
+
+      }
+    }
+
+    &::before{
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: $grey-light-text;
+      position: absolute;
+      top: 20px;
+      left: 4px; 
+
+      @media (min-width:1280px){
+        display: none;
+      }
+
+    }
+  }
+
+  &__title{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font: 15px/29.17px  'Mont-700';
+
+    @media (min-width:1280px){
+      font: 19px/29.17px  'Mont-700';
+      margin-bottom: 40px;
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px  'Mont-700';
+    }
+
+    &::before{
+      content: '';
+      border: 5px solid $orange-full;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: $orange-full;
+      margin-right: 25px;
+
+      @media (min-width:768px){
+        margin-right: 46px;
+      }
+
+      @media (min-width:1280px){
+        display: block;
+        border: 9px solid $orange-full;
+        width: 18px; 
+        margin-bottom: 40px; 
+      }
+    }
+  }
+  
+  &__description{
+    padding: 0px;
+    padding-left: 30px;
+
+    @media (min-width:768px){
+      padding-left: 56px;
+      display: flex;
+    }
+
+    @media (min-width:1280px){
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+}
+
+.description{
+
+  @media (min-width:768px){
+    width: 160px;
+    margin-right: 20px;
+  }
+
+  @media (min-width:1280px){
+    margin-bottom: 40px;
+    width: 240px;
+
+    &:last-of-type{
+      width: auto;
+    }
+
+    @media (min-width:1680px){
+      margin-right: 70px;
+
+      &:last-of-type{
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__title{
+    margin: 0 auto;
+    font: 13px/29.17px 'Mont-700';
+    color: $orange-full;
+
+    @media (min-width:1280px){
+      font: 18px/29.17px 'Mont-700';
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px 'Mont-700';
+    }
+
+    &::before{
+      display: inline-block;
+      content: ' ';
+      width: 25px;
+      height: 2px;
+      background-color: $orange-full;
+      vertical-align: middle;
+      margin-right: 14px;
+    }
+  }
+
+  &__text{
+    margin: 0 auto;
+    font: 11px/20px 'Mont-400';
+    color: $grey-light-text;
+
+    @media (min-width:1280px) {
+      font: 15px/29.15px 'Mont-400';
+    }
+
+    @media (min-width:1680px) {
+      font: 18.75px/29.17px 'Mont-400';
+    }
+  }
+}
+
+.reason{
+  padding: 0px;
+  position: relative;
+  bottom: 0px;
+
+  @media (min-width:768px){
+    padding: 20px 0px 0px;
+  }
+
+  @media (min-width:1280px) {
+    padding: 0px;
+  }
+
+  @media (min-width:1680px){
+    padding: 0px;
+  }
+
+  &__title{
+    font: 20px/30px 'Mont-900';
+    margin-top: 0px;
+    color: $primary-white;
+    padding-right: 30px;
+
+    @media (min-width:768px){
+      font: 26px/62.54px 'Mont-900';
+      text-align: center;
+    }
+
+    @media (min-width:1280px){
+      font: 42px/56.54px 'Mont-900';
+    }
+
+    @media (min-width:1680px){
+      font: 45.83px/56.54px 'Mont-900';
+    }
+
+  }
+
+  &__list{
+    margin: 0;
+    padding: 23px 34px;
+    list-style-type: none;
+    font: 13px/20px 'Mont-700';
+    color: $black-text;
+
+    @media (min-width:768px){
+      padding: 28px 105px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width:1280px){
+      padding: 50px 100px;
+      font: 18px/29.17px 'Mont-700';
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px 'Mont-700';
+      padding: 70px 0px 70px 100px;
+    }
+  }
+
+
+}
+
+.reason-list{
+  counter-reset: numbers;
+  background-color: $primary-white;
+
+  &__item{
+    margin-bottom: 6px;
+
+    @media (min-width:768px){
+      margin-bottom: 30px;
+      width: 202px; 
+      margin-right: 50px;
+
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width:1280px){
+      width: 300px;
+      margin-right: 50px;
+      margin-bottom: 45px;
+
+      &:nth-child(2n+2){
+        margin-right: 50px;
+      }
+
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width:1680px){
+      width: 340px;
+      margin-right: 70px;
+      margin-bottom: 45px;
+
+      &:nth-child(2n+2){
+        margin-right: 70px;
+      }
+
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    }
+
+    &::before{
+      counter-increment: numbers;
+      content: '\2014   0' counter(numbers);
+      color: $orange-full;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+  }
+}

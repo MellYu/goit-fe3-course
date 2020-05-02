@@ -1,0 +1,140 @@
+.team{
+  margin: 0px;
+  margin-bottom: 15px;
+  padding: 38px 20px 0px;
+  background-image: linear-gradient( $grey-col, $primary-white);
+
+  @media (min-width:768px){
+    padding: 65px 40px 0px;
+  }
+
+  @media (min-width:1280px){
+    padding: 95px 35px 0px;
+  }
+
+  @media (min-width:1680px){
+    padding: 123px 186px 0px;
+  }
+
+  &__leader{
+    @media (min-width:768px){
+      display: flex;
+    }
+  }
+
+  &__block{
+    @media (min-width:768px){
+      padding-left: 42px;
+    }
+  
+    @media (min-width:1280px){
+      padding-left: 85px; 
+    }
+  }
+
+  &__title{
+    margin: 0px;
+    margin-bottom: 21px;
+    font: 20px/30px 'Mont-900';
+    color: $black-text;
+
+    @media (min-width:768px){
+      font: 26px/62.54px 'Mont-900';
+    }
+
+    @media (min-width:1280px){
+      font: 42px/62.54px 'Mont-900';
+      margin-bottom: 28px;
+    }
+
+    @media (min-width:1680px){
+      font: 45.83px/62.54px 'Mont-900';
+      margin-bottom: 65px;
+    }
+  }
+
+  &__member{
+    font: 16px/29.17px 'Mont-900';
+    color: $black-text;
+    border-bottom: 1px solid $border-col;
+
+    @media (min-width:768px){
+      font: 20px/29.17px 'Mont-900';
+      margin-top: 0;
+      padding-bottom: 17px;
+    }
+
+    @media (min-width:1280px){
+      font: 29.17px/29.17px 'Mont-900';
+    }
+  }
+
+  &__practise{
+    margin: 0px;
+    padding: 0px;
+
+    @media (min-width:1280px){
+      margin-bottom: 38px;
+    }
+
+    &::after{
+      display: block;
+      content: ' ';
+      width: 25px;
+      height: 2px;
+      background-color: $orange-full;
+      margin-left: 15px;
+    }
+  }
+
+  &__text{
+    padding-left: 15px;
+    font: 11px/20px 'Mont-400';
+    color: $grey-light-text;
+
+    @media (min-width:1280px){
+      font: 16.67px/29.17px 'Mont-400';
+    }
+  }
+
+  &__link{
+    padding-left: 15px;
+    font: 11px/29.17px 'Mont-400';
+    color: $orange-full;
+
+    @media (min-width:1280px){
+      font: 16.67px/29.17px 'Mont-400';
+    }
+  }
+}
+
+.practise__item{
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.practise-item{
+  padding: 0px;
+
+  &__icon{
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    fill: $orange-full;
+  }
+
+  &__text{
+    margin: 0 auto;
+    font: 13px/1.2 'Mont-700';
+    color: $black-text;
+
+    @media (min-width:768px){
+      margin: 0;
+    }
+
+    @media (min-width:1280px){
+      font: 16.67px/29.17px 'Mont-700'; 
+    }
+  }
+}

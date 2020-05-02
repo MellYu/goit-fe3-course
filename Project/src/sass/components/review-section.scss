@@ -1,0 +1,230 @@
+.review{
+  margin: 0;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: $grey-bg;
+  position: relative;
+
+
+  @media (min-width:768px){
+    padding: 36px 40px 75px;
+    text-align: start;
+  }
+
+  @media (min-width:1280px){
+    padding: 95px 35px;
+  }
+
+  @media (min-width:1680px){
+    padding: 0px 186px 60px;
+  }
+
+  &__title{
+    font: 20px/26.54px 'Mont-900';
+    color: $black-text;
+    margin-bottom: 21px;
+
+    @media (min-width:768px){
+      font: 26px/62.54px 'Mont-900';
+      text-align: center;
+    }
+
+    
+    @media (min-width:1280px){
+      font: 42px/62.54px 'Mont-900'; 
+    }
+
+    @media (min-width:1680px){
+      font: 45.83px/62.54px 'Mont-900'; 
+    }
+  }
+
+  &__card{
+    padding: 21px 30px;
+    background-color: $primary-white;
+    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+
+    @media (min-width:768px){
+      display: flex;
+    }
+
+    
+    @media (min-width:1280px){
+      padding: 47px 85px;
+      margin: 0px 130px;
+    }
+  }
+
+  &__slider{
+    display: flex;
+    justify-content: center;
+
+    @media (min-width:1280px){
+      padding: 25px 0px;
+    }
+  }
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width:768px){
+    padding: 0px 5px;
+    margin-right: 40px;
+  }
+
+  &__photo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  &__icon{
+    margin: 0 auto;
+    width: 25px;
+    height: 14px;
+
+    @media (min-width:1280px){
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.card{
+  &__name{
+    font: 13px/29.17px 'Mont-900';
+    color: $orange-full;
+
+    @media (min-width:768px){
+      font: 18px/29.17px 'Mont-900';
+    }
+
+    @media (min-width:1280px){
+      font: 25px/29.17px 'Mont-900'; 
+      margin: 0px;
+    }
+
+  }
+    
+  &__position{
+    font: 11px/16.67px 'Mont-300';
+    color: $grey-light-text;
+
+    @media (min-width:768px){
+      font: 12.5px/16.67px 'Mont-300';
+    }
+
+    
+    @media (min-width:1280px){
+      font: 12.5px/16.67px 'Mont-300';
+      padding-right: 300px;
+    }
+  }
+    
+  &__description{
+    margin: 0;
+    font: 11px/20px 'Mont-300';
+    color: $black-text;
+
+    @media (min-width:768px){
+      padding-right: 35px;
+    }
+
+    @media (min-width:1280px){
+      font: 16.67px/29.17px 'Mont-300';
+    }
+  }
+}
+
+.slider{
+  &__btn{
+    background: none;
+    border: none;
+    color: $orange-full;
+    position: absolute;
+    bottom: 55px;
+
+    @media (min-width:768px){
+      bottom: 50%;
+      font-size: 26px;
+    }
+
+    
+    @media (min-width:1280px){
+      font-size: 36px;
+    }
+
+    @media (min-width:1680px){
+      bottom: 55%;
+      font-size: 40px;
+    }
+  }
+}
+
+.btn-right{
+  right: 20px;
+  font-size: 25px;
+
+  @media (min-width:1280px){
+    right: 45px;
+  }
+
+  @media (min-width:1680px){
+    right: 250px;
+  }
+}
+
+.btn-left{
+  left: 20px;
+  font-size: 25px;
+
+  @media (min-width:1280px){
+    left: 58px;
+  }
+
+  @media (min-width:1680px){
+    left: 250px;
+  }
+}
+
+.slid-item{
+  &__list{
+    display: flex;
+
+    :nth-child(n + 4){
+      display: none;
+
+      @media (min-width:768px){
+        display: block;
+      }
+    }
+  }
+
+  &__photo{
+    margin-right: 11px;
+
+    @media (min-width:768px){
+      margin-right: 21px;
+    }
+    
+    @media (min-width:1280px) {
+      margin-right: 35px;     
+    }
+
+    &:nth-child(3n){
+      margin-right: 0px;
+
+      @media (min-width:768px){
+        margin-right: 21px;
+      }
+
+      @media (min-width:1280px) {
+        margin-right: 35px;     
+      }
+    }
+  }
+}

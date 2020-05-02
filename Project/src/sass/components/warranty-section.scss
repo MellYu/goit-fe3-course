@@ -1,0 +1,113 @@
+.warranty{
+  padding: 0px;
+
+  @media (min-width:768px){
+    padding: 0px 40px;   
+  }
+
+  @media (min-width:1280px){
+    padding: 0px 35px;   
+  }
+
+  @media (min-width:1680px){
+    padding: 0px 185px;   
+  }
+
+  &__title{
+    margin: 0;
+    font: 20px/64px 'Mont-900';
+    color: $black-text;
+    text-align: center;
+
+    @media (min-width:768px){
+      font: 26px/62.54px 'Mont-900';
+    }
+
+    @media (min-width:1280px){
+      font: 42px/62.54px 'Mont-900'; 
+      padding: 44px 0px;  
+    }
+
+    @media (min-width:1680px){
+      font: 45px/62.54px 'Mont-900';
+    }
+  }
+  
+  &__list{
+    margin: 0;
+    padding: 23px 0;
+    background-color: $grey-col;
+    position: relative;
+
+    @media (min-width:768px){
+      padding: 30px 60px;
+    }
+
+    @media (min-width:1280px){
+      padding: 45px 115px;   
+    }
+
+    @media (min-width:1680px){
+      padding: 60px 90px;   
+    }
+  }
+}
+
+.warranty-item{
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0px 20px;
+  display: flex;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+
+  &__icon{
+    width: 14px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    fill: $orange-full;
+  }
+
+  &__text{
+    margin: 0;
+    font: 11px/20px 'Mont-400';
+    color: $black-text;
+    padding-right: 11px;
+    position: relative;
+
+    &::before{
+      display: inline-block;
+      content: '';
+      width: 1px;
+      height: 100%;
+      border-left: 1px dashed $grey-light-text;
+      position: absolute;
+      top: 15px;
+      left: -27px;
+    }
+
+    
+    @media (min-width:768px){
+      padding: 0;
+    }
+
+    @media (min-width:1280px){
+      font: 18px/29.17px 'Mont-400';
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px 'Mont-400'; 
+    }
+
+  }
+
+}
+
+.warranty-item:last-of-type .warranty-item__text{
+  &::before{
+    display: none;
+  }
+}

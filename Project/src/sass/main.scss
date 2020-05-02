@@ -1,0 +1,20 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables';
+@import 'helpers/montserrat';
+@import 'normalize.scss';
+@import 'base.scss';
+
+@import 'helpers/container';
+@import 'components/header';
+@import 'components/introduction-section';
+@import 'components/problems-section';
+@import 'components/solution-section';
+@import 'components/program-section';
+@import 'components/team-section';
+@import 'components/warranty-section';
+@import 'components/review-section';
+@import 'components/form-section';
+@import 'components/contacts-section';
+@import 'components/footer';

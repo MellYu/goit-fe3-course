@@ -1,0 +1,115 @@
+.problems{
+  background-image: linear-gradient($black-bg 77%, $primary-white 23%);
+  padding: 53px 20px 0px;
+
+  @media (min-width:768px) {
+    background-image: url(../../images/tablet-images/bg-fire.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 53px 40px 0px;
+  }
+
+  @media (min-width:1280px) {
+    background-image: url(../../images/desctop-images/bg-fire.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 53px 35px 0px;
+  }
+
+  @media (min-width:1680px) {
+    background-image: url(../../images/big-dt-images/bg-fire.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 115px 184px 0px;
+  }
+
+  &__title{
+    font: 20px/30px 'Mont-900';
+    color: $primary-white;
+    padding-right: 45px;
+    margin-top: 0px;
+
+    @media (min-width:768px) {
+      font: 26px/33px 'Mont-900';
+    }
+
+    @media (min-width:1280px) {
+      font: 42px/56.54px 'Mont-900';
+      margin: 0px 0px 50px 0px;
+    }
+
+    @media (min-width:1680px) {
+      font: 45.83px/62.54px 'Mont-900';
+      margin: 0px 0px 70px 0px;
+    }
+  }
+
+  &__list{
+    margin: 0;
+    padding: 23px 34px;
+    list-style-type: none;
+    font: 13px/20px 'Mont-700';
+    color: $black-text;
+
+    @media (min-width:768px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-right: 40px;
+      padding-left: 105px;
+    }
+
+    @media (min-width:1280px){
+      font: 18px/29.17px 'Mont-700';
+      padding: 55px 100px;
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/29.17px 'Mont-700';
+    }
+  }
+}
+
+.problem-list{
+  counter-reset: numbers;
+  background-color: $primary-white;
+
+  &__item{
+    margin-bottom: 6px;
+
+    @media (min-width:768px){
+      width: 225px;
+      margin-right: 35px; 
+    }
+
+    @media (min-width:1280px){
+      width: 260px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+      &:nth-child(n+3){
+        margin-bottom: 0px;
+      }
+
+      @media (min-width:1680px) {
+        width: 301px;
+        margin-left: 0px;
+        margin-right: 100px;
+
+        &:nth-child(3n+3){
+          margin-right: 0px;
+        }
+      }  
+
+    }
+
+    &::before{
+      counter-increment: numbers;
+      content: '\2014   0' counter(numbers);
+      color: $orange-full;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+  }
+}

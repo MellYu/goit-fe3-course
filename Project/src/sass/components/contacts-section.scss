@@ -1,0 +1,103 @@
+.contacts{
+  padding: 15px 20px;
+
+  @media (min-width:768px){
+    padding: 35px 40px;
+  }
+
+  @media (min-width:1280px){
+    padding: 50px 35px;
+  }
+
+  @media (min-width:1680px){
+    padding: 50px 180px;
+  }
+}
+
+
+.contact-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width:768px){
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  &__phone{
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    font: 18px/37.5px 'Mont-700';
+    color: $black-text;
+    text-decoration: none;
+
+    @media (min-width:768px) {
+      padding: 0px 24px;
+      font: 20px/37.5px 'Mont-700';
+    }
+
+    @media (min-width:1280px) {
+      font: 27px/37.5px 'Mont-700';
+    }
+  }
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width:768px){
+    flex-direction: row;
+    margin-left: 70px;
+    align-items: center;
+  }
+
+  @media (min-width:1280px){
+    margin-left: 250px;
+  }
+
+  @media (min-width:1680px){
+    margin-left: 300px;
+  }
+  
+  &__phone{
+    width: 20px;
+    height: 20px;
+    fill: $orange-full;
+    margin-right: 8px;
+
+    @media (min-width:768px){
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.insta-icon{
+  margin-bottom: 20px;
+
+  @media (min-width:768px) {
+    padding: 0px 24px;
+    margin-bottom: 0;
+    position: relative;
+
+    &::before{
+      display: inline-block;
+      content: '';
+      width: 1px;
+      height: 29px;
+      background-color: $before-col;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+}
+
+.insta-icon img{
+  width: 37px;
+  height: 37px;
+}

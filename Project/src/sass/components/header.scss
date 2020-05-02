@@ -1,0 +1,97 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 35px 40px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 25px 35px;
+  }
+
+  @media (min-width: 1680px) {
+    padding: 25px 183px 25px 153px;
+  }
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+
+  &__phoneButton{
+    display: none;
+    padding: 17px 20px;
+    font: 11px/1.2 'Mont-700';
+    text-transform: uppercase;
+    color: $orange-full;
+    background: none;
+    border: 2px solid $orange-full;
+    margin-right: 45px;
+    
+    @media (min-width: 768px) {
+      display: block;
+
+      &:hover,
+      &:focus{
+        color: $orange-dk;
+        border-color: $orange-dk;
+      }
+    }
+
+    @media (min-width:1280px) {
+      margin-right: 0px;
+      font: 12px/1.2 'Mont-700';
+    }
+
+    @media (min-width:1680px) {
+      margin-right: 0px;
+      font: 14px/1.2 'Mont-700';
+    }
+  }
+
+  &__listButton{
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border: none;
+
+    @media (min-width:1280px) {
+      display: none;
+    }
+  }
+}
+
+.logo{
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.list{
+  display: none;
+  font: 12px/1.2 'Mont-700';
+  color: $grey-text;
+  text-transform: uppercase;
+
+  &__item{
+    margin-right: 44px;
+
+    &:hover{
+      color: $orange-full;
+    }
+  }
+
+  @media (min-width:1280px) {
+    display: flex;
+  }
+
+  @media (min-width:1680px) {
+    font: 14px/1.2 'Mont-700';
+  }
+}
+

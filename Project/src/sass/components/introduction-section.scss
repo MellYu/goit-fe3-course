@@ -1,0 +1,209 @@
+.introduction{
+  padding: 20px 0px;
+  background: url(../../images/mobile-images/promotion-bg.png) no-repeat center;
+  background-size: cover;
+
+  @media (min-width:768px){
+    padding: 20px 40px 80px;
+    background-image: url(../../images/tablet-images/int-bg.png);
+  }
+
+  @media (min-width:1680px) {
+    background-image: url(../../images/big-dt-images/int-bg.png);
+  }
+
+  &__wrapper{
+    @media (min-width: 768px){
+      display: flex;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: 1680px){
+      padding: 0px 104px;
+    }
+  }
+
+  &__title{
+    font: 20px/29px 'Mont-900';
+    margin: 0px auto 38px;
+    padding: 0px 20px;
+
+    @media (min-width:768px)
+    {
+      font: 24px/33px 'Mont-900'; 
+      padding: 0px 20px 0px 0px;
+    }
+
+    @media (min-width:1280px){
+      font: 48.33px/58px 'Mont-900';
+      padding-top: 74px;
+    }
+
+    @media (min-width:1680px){
+      font: 58.33px/75.83px 'Mont-900'; 
+    }
+  }
+
+  &__motivation{
+    font: 15px/20.33px 'Mont-700';
+    margin: 0px auto 38px;
+    padding: 0px 20px;
+
+    @media (min-width:768px){
+      padding: 0px;
+      padding-right: 30px;
+    }
+
+    @media (min-width:1280px){
+      font: 18px/26.33px 'Mont-700';
+    }
+
+    @media (min-width:1680px){
+      font: 20.83px/33.33px 'Mont-700' ;
+    }
+  }
+
+  &__btn{
+    width: 250px;
+    margin: 0 35px;
+    margin-bottom: 35px;
+    padding: 20px 14px;
+    background-color: $orange-full;
+    border: none;
+    font: 11px/1.2 'Mont-700';
+    color: $primary-white;
+    text-transform: uppercase;
+
+    @media (min-width:768px){
+      margin: 0;
+    }
+
+    @media (min-width:1680px){
+      width: 349px;
+      font: 14px/1.6 'Mont-700';
+    }
+
+    &:focus,
+    &:hover{
+      background-color: $orange-dk;
+    }
+  }
+
+  &__photo{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width:768px){
+      margin-bottom: 0px;    }
+  }
+
+  &__promo{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px;
+  }
+}
+
+
+.photo{  
+  &__main{
+    width: 217px;
+    height: auto;
+  }
+}
+
+.promo-list{
+  background-color: #fefefe;
+  padding: 20px 20px 50px;
+
+  @media (min-width:768px){
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;
+  }
+
+  @media (min-width:1280px){
+    justify-content: start;
+  }
+
+  @media (min-width:1680px){
+    padding: 70px 144px 125px;
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    padding: 0px 35px 0px 49px;
+
+    @media (min-width:768px){
+      margin-right: 75px;
+      padding: 0px;
+    
+      @media (min-width: 1280px){
+        margin-right: 334px;
+      } 
+
+      @media (min-width: 1680px){
+        margin-right: 418px;
+      } 
+
+
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+
+  }
+
+}
+
+.promo-item{
+  position: relative;
+
+  &__icon{
+    margin: 0;
+    margin-right: 12px;
+    padding: 8px 12px;
+    width: 58px;
+    height: 58px;
+    border: 2px solid $orange-full;
+    fill: $orange-full;
+    flex-shrink: 0;
+    position: relative;
+
+    @media (min-width:1280px){
+      width: 101px;
+      height: 101px;
+      padding: 24px 27px;
+    }
+
+    &::after{
+      position: absolute;
+      top: 11px;
+      right: -4px;
+      display: block;
+      content: ' ';
+      width: 10px;
+      height: 32px;
+      background-color: $primary-white;
+
+      @media (min-width:1280px){
+        height: 73px;
+      }
+    }
+  }
+
+  &__text{
+    font: 13px/20px 'Mont-700';
+    color: $black-text;
+
+    @media (min-width:1280px){
+      font: 18px/28px 'Mont-700' ;
+      position: absolute;
+      left: 84px;
+      margin: 0 auto;
+      width: 295px;
+    }
+  }
+}
