@@ -74,12 +74,13 @@
 
 .list{
   display: none;
-  font: 12px/1.2 'Mont-700';
-  color: $grey-text;
-  text-transform: uppercase;
-
+ 
   &__item{
     margin-right: 44px;
+    text-decoration: none;
+    font: 12px/1.2 'Mont-700';
+    color: $grey-text;
+    text-transform: uppercase;
 
     &:hover{
       color: $orange-full;
