@@ -3,7 +3,9 @@
     padding: 20px 0px;
     text-align: center;
     background-color: $black-bg;
-    font: 11px/37.5px 'Mont-400';
+    font-family: 'Mont-400';
+    font-size: 11px;
+    line-height: 37.5px;
     color: $grey-text;
 
     @media (min-width:768px) {
