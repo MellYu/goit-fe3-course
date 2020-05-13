@@ -1,7 +1,21 @@
+.section-bg{
+  background-image: linear-gradient($black-bg 90%, $primary-white 10%);
+
+  @media (min-width:1280px) {
+    background-color: $black-bg;
+    background-image: none;
+  }
+
+  @media (min-width:1680px) {
+    background-color: $primary-white;
+    background-image: linear-gradient($black-bg 90%, $primary-white 10%);
+  }
+}
+
 .program{
   margin: 0 auto;
   padding: 52px 20px 0px;
-  background-image: linear-gradient($black-bg 90%, $primary-white 10%);
+  // background-image: linear-gradient($black-bg 90%, $primary-white 10%);
   position: relative;
 
   @media (min-width:768px){
@@ -10,7 +24,7 @@
 
   @media (min-width:1280px){
     padding: 80px 35px 0px;
-    background-color: $black-bg;
+    // background-color: $black-bg;
     background-image: none;
   }
 

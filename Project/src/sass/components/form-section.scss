@@ -1,24 +1,24 @@
-.register-form{
-  padding: 58px 20px;
-  background-image: url(../images/mobile-images/form-bg.png);
+.bg-register{
+  background-image: url(../images/big-dt-images/form-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.register-form{
+  padding: 58px 20px;
   text-align: center;
 
   @media (min-width:768px){
     padding: 65px 40px;
-    background-image: url(../images/tablet-images/form-bg.png);
   }
 
   @media (min-width:1280px){
     padding: 87px 35px;
-    background-image: url(../images/desctop-images/form-bg.png);
   }
 
   @media (min-width:1680px){
     padding: 130px 35px 100px;
-    background-image: url(../images/big-dt-images/form-bg.png);
   }
 
   &__title{

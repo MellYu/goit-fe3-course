@@ -1,8 +1,11 @@
+.footer-bg{
+  background-color: $black-bg;
+}
 .footer{
   &__text{
+    margin: 0;
     padding: 20px 0px;
     text-align: center;
-    background-color: $black-bg;
     font-family: 'Mont-400';
     font-size: 11px;
     line-height: 37.5px;
